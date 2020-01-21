@@ -1,0 +1,116 @@
+Ask user for: name, purchase amount, and tax code.
+- Store name in a string variable, purchase amount in a double variable, and tax code in an int variable.
+- Create a double variable that stores the total amount due and intialize with 0;
+
+IF tax code is 0 
+- user is tax exempt and total amount due is equal to purchase amount.
+- store total due in total due variable
+ELSE IF tax code is 1 
+- user is charged 3% tax and total due = total due * (total due * .03)
+- store total due in total due variable
+ELSE IF tax code is 2
+- user is charged 5% tax and total due = total due * (total due * .05)
+- store total due in total due variable
+ELSE IF tax code is 3
+- user is charged 7% tax and total due = total due * (total due * .07)
+- store total due in total due variable
+
+Print customer name
+Print purchase amount
+Print sales tax
+Print total amount due
+
+INPUT 
+- customer name
+- purchase amount 
+- tax code
+PROCESSING 
+- store inputs in variables
+- calculate tax based on tax codes
+OUTPUT
+- customer name
+- purchase amount
+- sales tax
+- total amount due
+
+User Input: 
+Austin 
+5
+0
+
+Output:
+Name: Austin
+Purchase Amount: $5
+Tax: 0%
+Total Amount Due: $5
+
+User Input: 
+Jon
+10
+0.05
+
+Output:
+Name: Jon
+Purchase Amount: $10
+Tax: 5%
+Total Due: $10.50
+
+
+Ask user for employee #, pay rate, and # of hours worked in a week.
+- Store employee # in an int variable, pay rate in a double variable, hours worked in a double variable.
+- Validate that pay rate is less than or equal to 25.00 and hours worked are less than or equal to 60.
+	- IF the input for the above two fields are valid
+		- If hours worked is greater than or equal to 35
+			- subtract hours worked from 35 and store in variable named otHrs.
+			- multiply pay by 1.5 and store in variable named otRate
+			- multiply otHrs by otRate and store in variable named otPay
+			- multiply pay by 35 and store in variable named pay.
+			- create new variable named totalPay and add otPay and pay to totalPay 
+			- print totalPay
+		- ELSE 
+			- multiply pay by hours worked and store in variable named totalPay
+			- print totalPay
+	- ELSE
+		- print to user that the input is invalid and weekly pay will not be calcuated.
+
+INPUT 
+- employee #
+- pay rate
+- hours worked
+PROCESSING 
+- verify that pay and hours worked are valid
+- calculate weekly pay based on whether employee has over-time or not.
+OUTPUT
+- employee's total pay if inputs are valid
+- otherwise output that input is invalid and weekly pay will not be calculated.
+
+User Input:
+123
+15
+30
+
+Output:
+Employee #: 123
+Pay Rate: $15.00
+Hours Worked: 30 Hours
+Weekly Pay: $450.00
+
+totalPay = 30 * 15 = 450
+
+User Input:
+60
+20
+40
+
+otHrs = 40 - 35 - 5
+otRate = 20 * 1.5 = 30
+otPay = 30 * 5 = 150
+pay = 35 * 20 = 700
+totalPay = 150 + 700 = 850
+
+Output:
+Employee #: 60
+Pay Rate: $20.00
+Hours Worked: 40 Hours
+Weekly Pay: $850
+
